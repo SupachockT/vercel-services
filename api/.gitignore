@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Vercel deployment folder
+.vercel/
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+
+# npm-debug and yarn-error logs
+npm-debug.log*
+yarn-error.log*
+
+# IDE settings (e.g., VSCode)
+.vscode/
+
+# Operating system files (macOS)
+.DS_Store
+
+# Windows files
+Thumbs.db
