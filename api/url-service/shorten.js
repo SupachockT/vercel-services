@@ -1,4 +1,4 @@
-import pool from '../utils/database';
+import pool from '../../utils/database';
 import { encodeBase62 } from '../../utils/base62';  
 
 export default async function handler(req, res) {
