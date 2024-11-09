@@ -38,8 +38,8 @@ export default async function handler(req, res) {
 
             res.status(200).json({ history: formattedHistory });
         } catch (error) {
-            console.error('Error fetching all URL history:', error);
-            res.status(500).json({ error: 'Internal Server Error' });
+            console.error('Error fetching all URL history:', error.message);
+            res.status(500).json({ error: error.message || 'Internal Server Error' });
         }
     } else {
         res.status(405).json({ error: 'Method Not Allowed' });
