@@ -2,18 +2,8 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/**/*.js",
+            "src": "api/**/*",
             "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/url-service/shorten",
-            "dest": "/api/url-service/shorten.js"
-        },
-        {
-            "src": "/api/url-service/history",
-            "dest": "/api/url-service/history.js"
         }
     ]
 }
