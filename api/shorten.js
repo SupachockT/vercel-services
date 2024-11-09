@@ -1,7 +1,9 @@
-import pool from '../../utils/database';
-import { encodeBase62 } from '../../utils/base62';  
+import pool from '../utils/database';
+import { encodeBase62 } from '../utils/base62';
 
 export default async function handler(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    
     if (req.method === 'POST') {
         const { original_url, custom_url } = req.body;
 
