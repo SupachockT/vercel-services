@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const pool = require('./utils/database'); // adjust the path if needed
-const { encodeBase62 } = require('./utils/base62'); // adjust the path if needed
+const pool = require('../utils/database'); // adjust the path if needed
+const { encodeBase62 } = require('../utils/base62'); // adjust the path if needed
 const app = express();
 const PORT = process.env.PORT || 3000;
 
